@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_12_09_163823) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+
   create_table "servers", force: :cascade do |t|
     t.string "code_name"
     t.string "access_token"
