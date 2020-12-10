@@ -1,9 +1,8 @@
 require 'csv'
 class ReportsController < ApplicationController
- skip_before_action :verify_authenticity_token
- before_action :authenticate_server
+skip_before_action :verify_authenticity_token
+before_action :authenticate_server
   def handle
-
     if Rails.env.development?
       Entry.delete_all
       Lock.delete_all
